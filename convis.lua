@@ -58,10 +58,12 @@ local n = y:size(1)
 local ofn = params.output_dir .. "/" .. string.sub(params.image:match("[^/]+$"), 1, -5) .. "-" .. params.layer 
 
 for i = 1, n do
-  local y13 = y:clone():narrow(1,i,3)
-  y13[2] = y13[1]
-  y13[3] = y13[1]
-  local disp = deprocess(y13:double())
+  local y3 = torch.Tensor(3,y:size(2),y:size(3))
+  local y1 = y:clone():narrow(1,i,1)
+  y3[1] = y1
+  y3[2] = y1
+  y3[3] = y1
+  local disp = deprocess(y3:double())
   disp = image.minmax{tensor=disp, min=0, max=1}
   disp = image.scale(disp, content_image:size(3), content_image:size(2))
   local r = torch.cmul(disp:double(), content_image:double())
