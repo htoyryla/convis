@@ -5,7 +5,7 @@ Creates images in which the input image is highlighted by each feature map in th
 
 <img src="https://raw.githubusercontent.com/htoyryla/convis/master/tubingen-conv3_2-17.png" width="480">
 
-Dependencies: Torch
+Dependencies: Torch, loadcaffe
 
 ###Usage:
 
