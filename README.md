@@ -9,7 +9,8 @@ Dependencies: Torch
 
 ###Usage:
 
- ```th convis.lua -image examples/inputs/tubingen.jpg -layer conv5_2 -output_dir convis```
+ ```th convis.lua -image examples/inputs/tubingen.jpg -model models/VGG_ILSVRC_19_layers.caffemodel -proto models/VGG_ILSVRC_19_layers_deploy.prototxt -layer conv2_2 -output_dir convisimages
+```
  
 ###Parameters:
 ``` 
@@ -19,7 +20,7 @@ Dependencies: Torch
 -output_dir the dir in which the output images are going to be placed
 -layer      name of the conv layer
 ```
-The output_dir must exist in advance. The output files will be named like convis/tubingen-conv3_2-69.png
+The output_dir must exist in advance. The output files will be named like convisimages/tubingen-conv3_2-69.png
 
 
 
