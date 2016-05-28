@@ -9,8 +9,7 @@ Dependencies: Torch
 
 ###Usage:
 
- ```th convis.lua -image examples/inputs/tubingen.jpg -model models/VGG_ILSVRC_19_layers.caffemodel -proto models/VGG_ILSVRC_19_layers_deploy.prototxt -layer conv2_2 -output_dir convisimages
-```
+ ```th convis.lua -image examples/inputs/tubingen.jpg -model models/VGG_ILSVRC_19_layers.caffemodel -proto models/VGG_ILSVRC_19_layers_deploy.prototxt -layer conv2_2 -output_dir convisimages```
  
 ###Parameters:
 ``` 
