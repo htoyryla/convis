@@ -24,7 +24,7 @@ end
 local cmd = torch.CmdLine()
 
 cmd:option('-image', 'examples/inputs/tubingen.jpg')
-cmd:option('-output_dir', 'convis', 'directory where to place images')
+cmd:option('-output_dir', 'convis_output', 'directory where to place images')
 
 cmd:option('-proto', 'models/VGG_ILSVRC_19_layers_deploy.prototxt')
 cmd:option('-model', 'models/VGG_ILSVRC_19_layers.caffemodel')
