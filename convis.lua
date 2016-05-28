@@ -25,7 +25,7 @@ local cmd = torch.CmdLine()
 
 cmd:option('-image', 'examples/inputs/tubingen.jpg')
 cmd:option('-output_dir', 'convis_output', 'directory where to place images')
-
+cmd:option('-image_size', 800, 'output image size')
 cmd:option('-proto', 'models/VGG_ILSVRC_19_layers_deploy.prototxt')
 cmd:option('-model', 'models/VGG_ILSVRC_19_layers.caffemodel')
 cmd:option('-layer', 'relu4_2', 'layer for examine')
@@ -33,6 +33,7 @@ cmd:option('-layer', 'relu4_2', 'layer for examine')
 local params = cmd:parse(arg)
 
 local content_image = image.load(params.image, 3)
+content_image = image.scale(content_image, params.image_size, 'bilinear')
 local content_image_caffe = preprocess(content_image):float()
 local img = content_image_caffe:clone():float()
 
