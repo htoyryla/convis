@@ -7,7 +7,7 @@ Dependencies: Torch
 
 Usage:
 
- th convis.lua -image examples/inputs/tubingen.jpg -layer conv5_2
+ th convis.lua -image examples/inputs/tubingen.jpg -layer conv5_2 -output_dir convis
  
  Parameters:
  
@@ -17,4 +17,6 @@ Usage:
 - output_dir the dir in which the output images are going to be places
 - layer name of the conv layer
 
+The output_dir must exist in advance. The output files will be named like convis/tubingen-conv3_2-69.png
 
+Known issues:
