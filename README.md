@@ -21,9 +21,5 @@ Dependencies: Torch
 ```
 The output_dir must exist in advance. The output files will be named like convis/tubingen-conv3_2-69.png
 
-###Known issues:
-```
-/home/hannu/torch/install/bin/luajit: convis.lua:61: bad argument #3 to 'narrow' (out of range at ... )
-```
 
-This happens when almost all feature maps have been processed. I know why it happens and will correct it as soon as I have time. Anyhow, (more than) enough images will have been generated when this occurs.
+
