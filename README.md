@@ -13,10 +13,10 @@ Dependencies: Torch
  
 ###Parameters:
 ``` 
-image      the input image
-model      the caffemodel to be used
-proto      deploy prototxt
-output_dir the dir in which the output images are going to be places
+-image      the input image
+-model      the caffemodel to be used
+-proto      deploy prototxt
+-output_dir the dir in which the output images are going to be placed
 -layer     name of the conv layer
 ```
 The output_dir must exist in advance. The output files will be named like convis/tubingen-conv3_2-69.png
