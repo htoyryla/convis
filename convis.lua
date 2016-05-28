@@ -50,6 +50,10 @@ for i = 1, #cnn do
       print(name, typ)
       net:add(layer)
       if (name == params.layer) then break end
+      if (i == #cnn) then 
+        print("No such layer: "..params.layer)
+        return 
+      end   
 end
 
 local y = net:forward(img)
