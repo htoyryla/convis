@@ -1,7 +1,7 @@
 # convis
 A tool to visualize convolutional layer activations on an input image.  
 
-Creates images in which the input image is highlighted by each feature map in the given conv layer.
+Creates images in which the input image is highlighted by each filter in the given conv layer.
 
 <img src="https://raw.githubusercontent.com/htoyryla/convis/master/tubingen-conv3_2-17.png" width="480">
 
